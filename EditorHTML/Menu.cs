@@ -9,7 +9,7 @@ namespace EditorHTML
             public static void Show(){
                 Console.Clear();
 
-                Console.BackgroundColor = ConsoleColor.Blue;
+                Console.BackgroundColor = ConsoleColor.Red;
                 Console.ForegroundColor = ConsoleColor.Black;
 
                 DrawScreen();
@@ -22,7 +22,7 @@ namespace EditorHTML
 
         public static void DrawScreen()
             {
-                Console.Write("+");
+                Console.Write("#0");
                 for(int i=0; i<=30; i++)
                     Console.Write("-");
                 
@@ -74,6 +74,7 @@ namespace EditorHTML
                     {
                         Console.Clear();
                         Environment.Exit(0);
+                        Console.Clear();
                         break;
                     }
                     default: Show(); break;
